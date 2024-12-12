@@ -23,6 +23,15 @@ body {
     font-weight: bold;
 }
 
+.container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 500px; 
+    width: 90%; 
+}
+
 
 .container {
     margin: 0 auto;
@@ -79,4 +88,19 @@ button {
 
 button:hover {
     background-color: #3a6dcf;
+}
+
+body {
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    .container {
+        max-width: 300px;
+        gap: 5px;
+    }
 }
